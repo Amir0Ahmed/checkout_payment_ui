@@ -46,4 +46,4 @@ app.*.map.json
 
 
 # api keys file
-lib\core\utils\api_keys.dart
+lib/core/utils/api_keys.dart
