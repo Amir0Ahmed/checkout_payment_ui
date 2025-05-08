@@ -1,7 +1,6 @@
-import 'package:checkout_payment_ui/core/widgets/custom_button.dart';
-import 'package:flutter/material.dart';
-import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/custom_button_bloc_consumer.dart';
+import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/custom_payment_methods_button.dart';
 import 'package:checkout_payment_ui/Features/checkout/presentation/views/widgets/payment_methods_list_view.dart';
+import 'package:flutter/material.dart';
 
 class PaymentMethodsBottomSheet extends StatefulWidget {
   const PaymentMethodsBottomSheet({super.key});
@@ -34,7 +33,7 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
           const SizedBox(height: 16),
           PaymentMethodsListView(updatePaymentMethod: updatePaymentMethod),
           const SizedBox(height: 32),
-          CustomButton(text: 'pay', onTap: () {}),
+          CustomPaymentMethodsButton(isPaypal: isPaypal),
         ],
       ),
     );
